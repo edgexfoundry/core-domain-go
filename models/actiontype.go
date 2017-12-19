@@ -18,38 +18,16 @@
 
 package models
 
-import (
-)
-
 type ActionType string
 
 const (
-	PROFILE	ActionType = "PROFILE"
-	DEVICE = "DEVICE"
-	SERVICE = "SERVICE"
-	MANAGER = "MANAGER"
-	SCHEDULE = "SCHEDULE"
-	SCHEDULEEVENT = "SCHEDULEEVENT"
-	ADDRESSABLE = "ADDRESSABLE"
-	VALUEDESCRIPTOR = "VALUEDESCRIPTOR"
-	PROVISIONWATCHER = "PROVISIONWATCHER"
+	PROFILE          ActionType = "PROFILE"
+	DEVICE                      = "DEVICE"
+	SERVICE                     = "SERVICE"
+	MANAGER                     = "MANAGER"
+	SCHEDULE                    = "SCHEDULE"
+	SCHEDULEEVENT               = "SCHEDULEEVENT"
+	ADDRESSABLE                 = "ADDRESSABLE"
+	VALUEDESCRIPTOR             = "VALUEDESCRIPTOR"
+	PROVISIONWATCHER            = "PROVISIONWATCHER"
 )
-
-//func (at *ActionType) UnmarshalJSON(data []byte) error {
-//	// Extract the string from data.
-//	var s string
-//	if err := json.Unmarshal(data, &s); err != nil {
-//		return fmt.Errorf("ActionType should be a string, got %s", data)
-//	}
-//
-//	got, err := map[string]ActionType{"PROFILE": PROFILE, "DEVICE": DEVICE, "SERVICE": SERVICE, "MANAGER": MANAGER, "SCHEDULE": SCHEDULE, "SCHEDULEEVENT": SCHEDULEEVENT, "ADDRESSABLE": ADDRESSABLE, "VALUEDESCRIPTOR": VALUEDESCRIPTOR, "PROVISIONWATCHER": PROVISIONWATCHER}[s]
-//	if !err {
-//		return fmt.Errorf("invalid ActionType %q", s)
-//	}
-//	*at = got
-//	return nil
-//}
-
-//func (at *ActionType) MarshalText() ([]byte, error) {
-//
-//}
