@@ -21,9 +21,8 @@ package models
 import (
 	"bytes"
 	"encoding/json"
-	"strconv"
-
 	"gopkg.in/mgo.v2/bson"
+	"strconv"
 )
 
 /*
